@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Alimentos Saludables</string>
+
+    <string name="TvNombre">Escriba su nombre</string>
+
+    <string name="btenviardatos">Enviar Dato</string>
+    <string name="todo">TODO</string>
+    <string name="tu_nombre_es">Tu nombre es :</string>
+    <string name="button">Button</string>
+
+    <string name="Desayunosaludable"> Desayuno saludable </string>
+    <string name="Almuerzosaludable"> Almuerzo saludable </string>
+    <string name="Cenasaludabe"> Cena saludabe </string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+
+
+</resources>

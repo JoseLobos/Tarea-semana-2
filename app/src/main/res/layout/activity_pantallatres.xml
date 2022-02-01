@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9EBAA4A"
+    android:orientation="vertical"
+    tools:context=".Pantallatres">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="#B5BEE88C"
+        app:tabIconTint="@color/black"
+        app:tabIndicatorColor="#00FFFFFF"
+        app:tabTextColor="#000000">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Desayunosaludable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ihgo5x01"
+            android:text="@string/Desayunosaludable"
+            tools:ignore="ImageContrastCheck,ImageContrastCheck" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Almuerzosaludable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic__er"
+            android:text="@string/Almuerzosaludable" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Cenasaludabe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic__ffghg"
+            android:text="@string/Cenasaludabe" />
+    </com.google.android.material.tabs.TabLayout>
+</LinearLayout>
