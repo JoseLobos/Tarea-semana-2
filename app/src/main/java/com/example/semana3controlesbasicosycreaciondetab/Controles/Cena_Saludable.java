@@ -1,4 +1,4 @@
-package com.example.semana3controlesbasicosycreaciondetab;
+package com.example.semana3controlesbasicosycreaciondetab.Controles;
 
 import android.os.Bundle;
 
@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.semana3controlesbasicosycreaciondetab.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Desayunos_Saludables#newInstance} factory method to
+ * Use the {@link Cena_Saludable#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Desayunos_Saludables extends Fragment {
+public class Cena_Saludable extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +26,7 @@ public class Desayunos_Saludables extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public Desayunos_Saludables() {
+    public Cena_Saludable() {
         // Required empty public constructor
     }
 
@@ -34,11 +36,11 @@ public class Desayunos_Saludables extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Desayunos_Saludables.
+     * @return A new instance of fragment Cena_Saludable.
      */
     // TODO: Rename and change types and number of parameters
-    public static Desayunos_Saludables newInstance(String param1, String param2) {
-        Desayunos_Saludables fragment = new Desayunos_Saludables();
+    public static Cena_Saludable newInstance(String param1, String param2) {
+        Cena_Saludable fragment = new Cena_Saludable();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +61,6 @@ public class Desayunos_Saludables extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_desayunos__saludables, container, false);
+        return inflater.inflate(R.layout.fragment_cena__saludable, container, false);
     }
 }
