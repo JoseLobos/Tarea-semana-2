@@ -19,7 +19,7 @@ public class Pantallatres extends AppCompatActivity {
 
      TabItem Desayunosaludable,Almuerzosaludable,Cenasaludabe,Meriendasaludable;
 
-     PagerController pagerAdapter;
+     PagerContraller pagerAdapter;
 
 
 
