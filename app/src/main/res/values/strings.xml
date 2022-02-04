@@ -11,9 +11,12 @@
     <string name="Desayunosaludable"> Desayuno saludable </string>
     <string name="Almuerzosaludable"> Almuerzo saludable </string>
     <string name="Cenasaludabe"> Cena saludabe </string>
+    <string name="MeriendaSaludable"> Merienda Saludable </string>
     <string name="monday">Monday</string>
     <string name="tuesday">Tuesday</string>
     <string name="wednesday">Wednesday</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

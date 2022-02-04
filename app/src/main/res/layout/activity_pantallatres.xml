@@ -10,9 +10,7 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tablayout"
-        android:layout_width="match_parent"
-        android:layout_height="105dp"
-        android:background="#B5BEE88C"
+        style="@style/Merienda"
         app:tabIconTint="@color/black"
         app:tabIndicatorColor="#00FFFFFF"
         app:tabTextColor="#000000">
@@ -38,5 +36,12 @@
             android:layout_height="wrap_content"
             android:icon="@drawable/ic__ffghg"
             android:text="@string/Cenasaludabe" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Meriendasaludable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic__ffghg"
+            android:text="@string/MeriendaSaludable" />
     </com.google.android.material.tabs.TabLayout>
 </LinearLayout>
