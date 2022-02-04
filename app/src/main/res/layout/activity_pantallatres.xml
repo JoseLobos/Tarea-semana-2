@@ -10,7 +10,9 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tablayout"
-        style="@style/Merienda"
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:backgroundTint="#D5A5EDAC"
         app:tabIconTint="@color/black"
         app:tabIndicatorColor="#00FFFFFF"
         app:tabTextColor="#000000">
@@ -41,7 +43,12 @@
             android:id="@+id/Meriendasaludable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:icon="@drawable/ic__ffghg"
+            android:icon="@drawable/ic___1"
             android:text="@string/MeriendaSaludable" />
     </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/Viewuno"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>
