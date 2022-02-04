@@ -12,18 +12,6 @@
         <activity
             android:name=".Pantallatres"
             android:exported="false" />
-        <activity
-            android:name=".PantallaDos"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
