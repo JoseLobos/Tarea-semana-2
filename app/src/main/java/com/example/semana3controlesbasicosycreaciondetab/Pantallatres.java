@@ -4,22 +4,23 @@ package com.example.semana3controlesbasicosycreaciondetab;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+
 import android.os.Bundle;
 
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
-import com.example.semana3controlesbasicosycreaciondetab.Controles.PagerContraller;
+import com.example.semana3controlesbasicosycreaciondetab.Controles.PagerController;
 
 
 public class Pantallatres extends AppCompatActivity {
 
-    TabLayout tablayout;
+    TabLayout MenuTab;
 
-     ViewPager Viewuno;
+     ViewPager viewPager;
 
      TabItem Desayunosaludable,Almuerzosaludable,Cenasaludabe,Meriendasaludable;
 
-     PagerContraller pagerAdapter;
+  PagerController PagerAdapter;
 
 
 
@@ -29,28 +30,32 @@ public class Pantallatres extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantallatres);
 
-        tablayout = findViewById(R.id.tablayout);
+        MenuTab = findViewById(R.id.tablayout);
 
-        Viewuno = findViewById(R.id.Viewuno);
+        viewPager = findViewById(R.id.Viewuno);
 
         Desayunosaludable = findViewById(R.id.Desayunosaludable);
         Almuerzosaludable = findViewById(R.id.Almuerzosaludable);
         Cenasaludabe= findViewById(R.id.Cenasaludabe);
         Meriendasaludable= findViewById(R.id.Meriendasaludable);
 
-        pagerAdapter = new PagerContraller(getSupportFragmentManager(),tablayout.getTabCount());
+        PagerAdapter = new PagerController(getSupportFragmentManager(),MenuTab.getTabCount());
 
-        tablayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+        MenuTab.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-
-                Viewuno.setCurrentItem(tab.getPosition());
-
-                if (tab.getPosition()==0) {
-
-                    pagerAdapter.notifyDataSetChage();
+                // Obtenemos la posición del tab a mostrar
+                viewPager.setCurrentItem(tab.getPosition());
+                // Determinar cual fragment se presenta
+                if(tab.getPosition()==0){
+                    PagerAdapter.notifyDataSetChanged();
                 }
-
+                if(tab.getPosition()==1){
+                    PagerAdapter.notifyDataSetChanged();
+                }
+                if(tab.getPosition()==2){
+                    PagerAdapter.notifyDataSetChanged();
+                }
             }
 
             @Override
@@ -64,5 +69,14 @@ public class Pantallatres extends AppCompatActivity {
             }
         });
 
+
+
+        viewPager.addOnPageChangeListener(new
+                TabLayout.TabLayoutOnPageChangeListener(MenuTab));
+
+
     }
 }
+
+
+
